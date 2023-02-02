@@ -1,3 +1,5 @@
+function updateTime() {
+
 let zurichElement = document.querySelector("#zurich");
 let zurichDate = zurichElement.querySelector(".date");
 let zurichTime = zurichElement.querySelector(".time");
@@ -25,3 +27,6 @@ let hongKongTime = hongKongElement.querySelector(".time");
 let currentHongKongTime = moment().tz("Asia/Hong_Kong");
 hongKongDate.innerHTML = moment().format("MMMM Do YYYY");
 hongKongTime.innerHTML = currentHongKongTime.format("h:mm:ss [<small>]A[</small>]");
+}
+
+setInterval(updateTime, 1000);
