@@ -3,80 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
+    <link rel="stylesheet" href="src/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="/src/style.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World-Clock_ECF</title>
-
 </head>
 
 <body>
     <h1>World Clock</h1>
-    <div class="container shadow-lg p-3 mb-5 bg-body">
+    <div class="container">
     
     <center>
-    <select>
+    <select id ="city">
         <option value="">Select a city..</option>
-        <option value="">London</option>
-        <option value="">Brasilia</option>
-        <option value="">Kabul</option>
-        <option value="">Tokyo</option>
-        <option value="">Junau</option>
+        <option value="current">Current location</option>
+        <option value="Europe/London">London</option>
+        <option value="America/Argentina/Buenos_Aires">Buenos Aires</option>
+        <option value="Asia/Kabul">Kabul</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="America/Juneau">Juneau</option>
       </select>
-      <br/>
     </center>
-    <div class="city-list"> 
-        <div class="city" id="zurich">
-         <div>  
-            <h2>🇨🇭 Zurich</h2>
-            <div class="date">February 2, 2023</div>
-         </div>
-         <div class="time">6:05:15 
-            <small>AM</small>
-        </div>
+    
+    <br/>
+        
+    <div id="cities"> 
+      <div class="city" id = "zurich">
+        <div>  
+            <h2>sw Zurich </h2>
+            <div class="date"></div>
+        </div> 
+        <div class="time"></div>
       </div>
-      
+
       <div class="city" id="new-york">
         <div>  
             <h2>🇺🇸 New York </h2>
-            <div class="date">February 1, 2023</div>
-        </div> 
-        <div class="time">12:05:15 
-            <small>AM</small>
-        </div>
+            <div class="date"></div></div> 
+            <div class="time"></div>
       </div>
-      
+
+   
+
       <div class="city" id="istanbul">
         <div>
             <h2>🇹🇷 Istanbul</h2>
-            <div class="date">February 1, 2023</div>
+            <div class="date"></div>
         </div>  
-        <div class="time">8:05:15 
-            <small>AM</small>
-        </div>    
+            <div class="time"></div>    
       </div>
-
+    
       <div class="city" id="hong-kong">
         <div>
             <h2>🇭🇰 Hong Kong</h2>
-            <div class="date">February 1, 2023</div>
+            <div class="date"></div>
         </div> 
-        <div class="time">1:05:15 
-            <small>PM</small>
-        </div>
+        <div class="time"></div>
       </div>
+    </div>
+    </div>
 
-    </div>
-    </div>
-<footer>
+    <footer>
   <small>
-    Coded by <strong>Elizabeth Forstmann</strong>, <a href="" target="_blank">open-sourced on GitHub </a>
+    Coded by <strong>Elizabeth Forstmann</strong>, <a href="https://github.com/ECForce88/World-Clock_ECF" target="_blank">open-sourced on GitHub </a>
   </small>
 </footer>
     
