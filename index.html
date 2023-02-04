@@ -1,77 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
-    <link rel="stylesheet" href="src/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World-Clock_ECF</title>
-</head>
-
-<body>
+  </head>
+  <body>
     <h1>World Clock</h1>
     <div class="container">
-    
-    <center>
-    <select id ="city">
+      <select id ="city">
         <option value="">Select a city..</option>
-        <option value="current">Current location</option>
-        <option value="Europe/London">London</option>
+        <option value="current">My Location</option>
         <option value="America/Argentina/Buenos_Aires">Buenos Aires</option>
         <option value="Asia/Kabul">Kabul</option>
         <option value="Asia/Tokyo">Tokyo</option>
         <option value="America/Juneau">Juneau</option>
       </select>
-    </center>
-    
-    <br/>
-        
-    <div id="cities"> 
-      <div class="city" id = "zurich">
-        <div>  
-            <h2>sw Zurich </h2>
-            <div class="date"></div>
-        </div> 
-        <div class="time"></div>
-      </div>
 
-      <div class="city" id="new-york">
-        <div>  
-            <h2>🇺🇸 New York </h2>
-            <div class="date"></div></div> 
-            <div class="time"></div>
-      </div>
-
-   
-
-      <div class="city" id="istanbul">
-        <div>
-            <h2>🇹🇷 Istanbul</h2>
+      <div id="cities">
+        <div class="city" id="zurich">
+          <div>
+            <h2>Zurich sw</h2>
             <div class="date"></div>
-        </div>  
-            <div class="time"></div>    
-      </div>
-    
-      <div class="city" id="hong-kong">
-        <div>
-            <h2>🇭🇰 Hong Kong</h2>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="istanbul">
+          <div>
+            <h2>Istanbul 🇹🇷</h2>
             <div class="date"></div>
-        </div> 
-        <div class="time"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="hong-kong">
+          <div>
+            <h2><h2>Hong Kong 🇭🇰</h2></h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="new-york">
+          <div>
+            <h2>New York 🇺🇸</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
       </div>
     </div>
-    </div>
-
     <footer>
-  <small>
-    Coded by <strong>Elizabeth Forstmann</strong>, <a href="https://github.com/ECForce88/World-Clock_ECF" target="_blank">open-sourced on GitHub </a>
-  </small>
-</footer>
-    
-<script src="src/script.js"></script>
-
-</body>
+      Coded by <strong>Elizabeth Forstmann</strong>, <a href="https://github.com/ECForce88/World-Clock_ECF" target="_blank">open-sourced on GitHub </a>
+    </footer>
+    <script src="src/script.js"></script>
+  </body>
 </html>

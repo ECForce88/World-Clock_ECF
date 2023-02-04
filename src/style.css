@@ -16,6 +16,7 @@ h1 {
     color:white;
     margin-top: 0px;
     margin-bottom:0px;
+    text-shadow: #000001 1px 1px 2px;
 }
 
 h2 {
@@ -27,11 +28,13 @@ a {
 }
 
 footer {
+    font-size: 14px;
     color:rgb(79, 126, 47);
+    text-shadow: white 1px 0 10px;
     background-color:rgba(255, 255, 255, 0.489);
-    padding-top: 5px;
+    padding-top: 7px;
     padding-bottom: 3px;
-    max-width: 370px;
+    max-width: 380px;
     border-radius: 2px;
     margin:0 auto;
     text-align: center;
@@ -50,7 +53,7 @@ select {
 }
 
 .container {
-    background-color: rgb(20, 22, 62);
+    background-color: #14163e;
     margin:0 auto;
     max-width: 450px;
     border-style:solid;
@@ -61,8 +64,8 @@ select {
     padding-bottom:10px;
     padding-left:25px;
     padding-right:25px;
-    opacity:85%;
-    box-shadow:10px 5px 5px rgb(15, 17, 43);
+    opacity:80%;
+    box-shadow:10px 5px 5px .5px rgb(15, 17, 43);
    
 }
 
