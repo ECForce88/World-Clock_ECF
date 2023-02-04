@@ -52,10 +52,12 @@ function updateTime() {
    )}</small></div>
    </div>
    `;
+   citiesSelectElement.value = "";
  }
  
  updateTime();
  setInterval(updateTime, 1000);
  
  let citiesSelectElement = document.querySelector("#city");
- citiesSelectElement.addEventListener("change", updateCity); 
+ citiesSelectElement.addEventListener("change", updateCity);
+ 
